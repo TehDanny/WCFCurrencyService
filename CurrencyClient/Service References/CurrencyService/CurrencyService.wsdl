@@ -3,24 +3,25 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:26028/CurrencyService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:26028/CurrencyService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="ICurrencyService_DoWork_InputMessage">
-    <wsdl:part name="parameters" element="tns:DoWork" />
+  <wsdl:message name="ICurrencyService_DanishKronerToEuro_InputMessage">
+    <wsdl:part name="parameters" element="tns:DanishKronerToEuro" />
   </wsdl:message>
-  <wsdl:message name="ICurrencyService_DoWork_OutputMessage">
-    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  <wsdl:message name="ICurrencyService_DanishKronerToEuro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DanishKronerToEuroResponse" />
   </wsdl:message>
   <wsdl:portType name="ICurrencyService">
-    <wsdl:operation name="DoWork">
-      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyService/DoWork" message="tns:ICurrencyService_DoWork_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyService/DoWorkResponse" message="tns:ICurrencyService_DoWork_OutputMessage" />
+    <wsdl:operation name="DanishKronerToEuro">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyService/DanishKronerToEuro" message="tns:ICurrencyService_DanishKronerToEuro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyService/DanishKronerToEuroResponse" message="tns:ICurrencyService_DanishKronerToEuro_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICurrencyService" type="tns:ICurrencyService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="DoWork">
-      <soap:operation soapAction="http://tempuri.org/ICurrencyService/DoWork" style="document" />
+    <wsdl:operation name="DanishKronerToEuro">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyService/DanishKronerToEuro" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

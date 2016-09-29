@@ -12,6 +12,6 @@ namespace CurrencyService
     public interface ICurrencyService
     {
         [OperationContract]
-        void DoWork();
+        decimal DanishKronerToEuro(decimal danishKroner);
     }
 }

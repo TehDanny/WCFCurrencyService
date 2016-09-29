@@ -20,9 +20,16 @@ namespace CurrencyClient
     /// </summary>
     public partial class MainWindow : Window
     {
+        Controller controller;
         public MainWindow()
         {
             InitializeComponent();
+            controller = new Controller();
+        }
+
+        private void RemoteCallBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResultLbl.Content = "Result: " + controller.DanishKronerToEuro(InputTbx.Text);
         }
     }
 }

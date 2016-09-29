@@ -25,6 +25,7 @@
     <MetadataFile FileName="CurrencyService.disco" MetadataType="Disco" ID="fa38f15d-d4d2-4672-9870-7cdb1455b6b0" SourceId="1" SourceUrl="http://localhost:26028/CurrencyService.svc?disco" />
     <MetadataFile FileName="CurrencyService.wsdl" MetadataType="Wsdl" ID="65758146-2fcd-477e-b7f7-ce99775b59a4" SourceId="1" SourceUrl="http://localhost:26028/CurrencyService.svc?wsdl" />
     <MetadataFile FileName="CurrencyService.xsd" MetadataType="Schema" ID="febdcf63-bc5c-4514-8c42-7926f416c7cd" SourceId="1" SourceUrl="http://localhost:26028/CurrencyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CurrencyService1.xsd" MetadataType="Schema" ID="c0241068-9342-4c6f-ae03-2e979eedafa7" SourceId="1" SourceUrl="http://localhost:26028/CurrencyService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

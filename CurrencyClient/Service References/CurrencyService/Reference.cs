@@ -15,11 +15,11 @@ namespace CurrencyClient.CurrencyService {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CurrencyService.ICurrencyService")]
     public interface ICurrencyService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/DoWork", ReplyAction="http://tempuri.org/ICurrencyService/DoWorkResponse")]
-        void DoWork();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/DanishKronerToEuro", ReplyAction="http://tempuri.org/ICurrencyService/DanishKronerToEuroResponse")]
+        decimal DanishKronerToEuro(decimal danishKroner);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/DoWork", ReplyAction="http://tempuri.org/ICurrencyService/DoWorkResponse")]
-        System.Threading.Tasks.Task DoWorkAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/DanishKronerToEuro", ReplyAction="http://tempuri.org/ICurrencyService/DanishKronerToEuroResponse")]
+        System.Threading.Tasks.Task<decimal> DanishKronerToEuroAsync(decimal danishKroner);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,12 +49,12 @@ namespace CurrencyClient.CurrencyService {
                 base(binding, remoteAddress) {
         }
         
-        public void DoWork() {
-            base.Channel.DoWork();
+        public decimal DanishKronerToEuro(decimal danishKroner) {
+            return base.Channel.DanishKronerToEuro(danishKroner);
         }
         
-        public System.Threading.Tasks.Task DoWorkAsync() {
-            return base.Channel.DoWorkAsync();
+        public System.Threading.Tasks.Task<decimal> DanishKronerToEuroAsync(decimal danishKroner) {
+            return base.Channel.DanishKronerToEuroAsync(danishKroner);
         }
     }
 }

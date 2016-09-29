@@ -11,8 +11,9 @@ namespace CurrencyService
     // NOTE: In order to launch WCF Test Client for testing this service, please select CurrencyService.svc or CurrencyService.svc.cs at the Solution Explorer and start debugging.
     public class CurrencyService : ICurrencyService
     {
-        public void DoWork()
+        public decimal DanishKronerToEuro(decimal danishKroner)
         {
+            return danishKroner / 745.99M * 100;
         }
     }
 }

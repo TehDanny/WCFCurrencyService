@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller.cs" />
     <Compile Include="Service References\CurrencyService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +101,9 @@
     <AppDesigner Include="Properties\" />
     <None Include="Service References\CurrencyService\CurrencyService.wsdl" />
     <None Include="Service References\CurrencyService\CurrencyService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CurrencyService\CurrencyService1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
