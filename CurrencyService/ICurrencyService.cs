@@ -13,5 +13,8 @@ namespace CurrencyService
     {
         [OperationContract]
         decimal DanishKronerToEuro(decimal danishKroner);
+
+        [OperationContract]
+        decimal GetExchangeRate(string iso);
     }
 }

@@ -27,9 +27,14 @@ namespace CurrencyClient
             controller = new Controller();
         }
 
-        private void RemoteCallBtn_Click(object sender, RoutedEventArgs e)
+        private void ConvertFromKrToEuroBtn_Click(object sender, RoutedEventArgs e)
         {
             ResultLbl.Content = "Result: " + controller.DanishKronerToEuro(InputTbx.Text);
+        }
+
+        private void GetExchangeRateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResultLbl.Content = "Exchange rate: " + controller.GetExchangeRate(InputTbx.Text);
         }
     }
 }

@@ -22,5 +22,11 @@ namespace CurrencyClient
             string euro = client.DanishKronerToEuro(danishKroner).ToString("#.##");
             return euro;
         }
+
+        internal string GetExchangeRate(string text)
+        {
+            string exchangeRate = client.GetExchangeRate(text).ToString();
+            return exchangeRate;
+        }
     }
 }

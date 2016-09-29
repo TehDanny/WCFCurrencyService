@@ -12,16 +12,35 @@
   <wsdl:message name="ICurrencyService_DanishKronerToEuro_OutputMessage">
     <wsdl:part name="parameters" element="tns:DanishKronerToEuroResponse" />
   </wsdl:message>
+  <wsdl:message name="ICurrencyService_GetExchangeRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangeRate" />
+  </wsdl:message>
+  <wsdl:message name="ICurrencyService_GetExchangeRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExchangeRateResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICurrencyService">
     <wsdl:operation name="DanishKronerToEuro">
       <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyService/DanishKronerToEuro" message="tns:ICurrencyService_DanishKronerToEuro_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyService/DanishKronerToEuroResponse" message="tns:ICurrencyService_DanishKronerToEuro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangeRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICurrencyService/GetExchangeRate" message="tns:ICurrencyService_GetExchangeRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICurrencyService/GetExchangeRateResponse" message="tns:ICurrencyService_GetExchangeRate_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICurrencyService" type="tns:ICurrencyService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="DanishKronerToEuro">
       <soap:operation soapAction="http://tempuri.org/ICurrencyService/DanishKronerToEuro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangeRate">
+      <soap:operation soapAction="http://tempuri.org/ICurrencyService/GetExchangeRate" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

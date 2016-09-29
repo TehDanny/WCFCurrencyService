@@ -20,6 +20,12 @@ namespace CurrencyClient.CurrencyService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/DanishKronerToEuro", ReplyAction="http://tempuri.org/ICurrencyService/DanishKronerToEuroResponse")]
         System.Threading.Tasks.Task<decimal> DanishKronerToEuroAsync(decimal danishKroner);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/GetExchangeRate", ReplyAction="http://tempuri.org/ICurrencyService/GetExchangeRateResponse")]
+        decimal GetExchangeRate(string iso);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICurrencyService/GetExchangeRate", ReplyAction="http://tempuri.org/ICurrencyService/GetExchangeRateResponse")]
+        System.Threading.Tasks.Task<decimal> GetExchangeRateAsync(string iso);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace CurrencyClient.CurrencyService {
         
         public System.Threading.Tasks.Task<decimal> DanishKronerToEuroAsync(decimal danishKroner) {
             return base.Channel.DanishKronerToEuroAsync(danishKroner);
+        }
+        
+        public decimal GetExchangeRate(string iso) {
+            return base.Channel.GetExchangeRate(iso);
+        }
+        
+        public System.Threading.Tasks.Task<decimal> GetExchangeRateAsync(string iso) {
+            return base.Channel.GetExchangeRateAsync(iso);
         }
     }
 }

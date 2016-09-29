@@ -9,9 +9,10 @@
     <Grid>
         <Label x:Name="TitleLbl" Content="Currency Client" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="InputTbx" HorizontalAlignment="Left" Height="23" Margin="214,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="RemoteCallBtn" Content="Remote call" HorizontalAlignment="Left" Margin="214,122,0,0" VerticalAlignment="Top" Width="75" Click="RemoteCallBtn_Click"/>
+        <Button x:Name="ConvertFromKrToEuroBtn" Content="Convert from kr to euro" HorizontalAlignment="Left" Margin="124,123,0,0" VerticalAlignment="Top" Width="140" Click="ConvertFromKrToEuroBtn_Click"/>
+        <Button x:Name="GetExchangeRateBtn" Content="Get exhange rate" HorizontalAlignment="Left" Margin="305,123,0,0" VerticalAlignment="Top" Width="100" Click="GetExchangeRateBtn_Click"/>
         <Label x:Name="ResultLbl" Content="Result: " HorizontalAlignment="Left" Margin="233,158,0,0" VerticalAlignment="Top"/>
-        
+
 
 
     </Grid>
