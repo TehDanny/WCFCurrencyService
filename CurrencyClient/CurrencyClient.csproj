@@ -99,6 +99,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Service References\CurrencyService\CurrencyClient.CurrencyService.CurrencyDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\CurrencyService\CurrencyService.wsdl" />
     <None Include="Service References\CurrencyService\CurrencyService.xsd">
       <SubType>Designer</SubType>
@@ -126,6 +129,9 @@
     <None Include="Service References\CurrencyService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\CurrencyService\CurrencyService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\CurrencyService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

@@ -16,6 +16,13 @@ namespace CurrencyService
             return danishKroner / 745.99M * 100;
         }
 
+        public List<CurrencyDTO> GetCurrencies()
+        {
+            List<CurrencyDTO> currencyList = new List<CurrencyDTO>();
+
+            return currencyList;
+        }
+
         public decimal GetExchangeRate(string iso)
         {
             switch (iso)

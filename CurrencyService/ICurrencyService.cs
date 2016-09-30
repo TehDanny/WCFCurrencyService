@@ -16,5 +16,8 @@ namespace CurrencyService
 
         [OperationContract]
         decimal GetExchangeRate(string iso);
+
+        [OperationContract]
+        List<CurrencyDTO> GetCurrencies();
     }
 }
