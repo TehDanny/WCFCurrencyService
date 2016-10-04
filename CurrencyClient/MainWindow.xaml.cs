@@ -36,5 +36,10 @@ namespace CurrencyClient
         {
             ResultLbl.Content = "Exchange rate: " + controller.GetExchangeRate(InputTbx.Text);
         }
+
+        private void GetCurrenciesBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResultLbl.Content = "Result: " + controller.GetCurrencies();
+        }
     }
 }

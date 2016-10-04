@@ -28,5 +28,12 @@ namespace CurrencyClient
             string exchangeRate = client.GetExchangeRate(text).ToString();
             return exchangeRate;
         }
+
+        internal string GetCurrencies()
+        {
+            client.GetCurrencies();
+
+            return "";
+        }
     }
 }

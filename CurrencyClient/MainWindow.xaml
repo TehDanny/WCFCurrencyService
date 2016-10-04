@@ -9,9 +9,11 @@
     <Grid>
         <Label x:Name="TitleLbl" Content="Currency Client" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="InputTbx" HorizontalAlignment="Left" Height="23" Margin="214,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="ConvertFromKrToEuroBtn" Content="Convert from kr to euro" HorizontalAlignment="Left" Margin="124,123,0,0" VerticalAlignment="Top" Width="140" Click="ConvertFromKrToEuroBtn_Click"/>
-        <Button x:Name="GetExchangeRateBtn" Content="Get exhange rate" HorizontalAlignment="Left" Margin="305,123,0,0" VerticalAlignment="Top" Width="100" Click="GetExchangeRateBtn_Click"/>
+        <Button x:Name="ConvertFromKrToEuroBtn" Content="Convert from kr to euro" HorizontalAlignment="Left" Margin="43,123,0,0" VerticalAlignment="Top" Width="140" Click="ConvertFromKrToEuroBtn_Click"/>
+        <Button x:Name="GetExchangeRateBtn" Content="Get exhange rate" HorizontalAlignment="Left" Margin="204,123,0,0" VerticalAlignment="Top" Width="100" Click="GetExchangeRateBtn_Click"/>
+        <Button x:Name="GetCurrenciesBtn" Content="Get currencies" HorizontalAlignment="Left" Margin="343,123,0,0" VerticalAlignment="Top" Width="94" Click="GetCurrenciesBtn_Click"/>
         <Label x:Name="ResultLbl" Content="Result: " HorizontalAlignment="Left" Margin="233,158,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Height="114" Width="497"/>
 
 
 
