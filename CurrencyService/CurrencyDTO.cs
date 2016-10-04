@@ -16,10 +16,32 @@ namespace CurrencyService
         const decimal SEK = 78.21M;
 
         [DataMember]
-        public string Name;
+        private string name;
         [DataMember]
-        public string ISO;
+        private string ISO;
         [DataMember]
-        public decimal ExchangeRate;
+        private decimal exchangeRate;
+
+        public CurrencyDTO(string name, string ISO, decimal exchangeRate)
+        {
+            this.name = name;
+            this.ISO = ISO;
+            this.exchangeRate = exchangeRate;
+        }
+
+        internal static List<CurrencyDTO> GetCurrencies()
+        {
+            List<CurrencyDTO> currencyList = new List<CurrencyDTO>()
+            {
+                new CurrencyDTO("America", "USD", 524.02M),
+                new CurrencyDTO("Canada", "CAD", 492.27M),
+                new CurrencyDTO("Euro", "EUR", 745.99M),
+                new CurrencyDTO("Norway", "NOK", 90.34M),
+                new CurrencyDTO("Great Britain", "GBP", 947.53M),
+                new CurrencyDTO("Sweden", "SEK", 78.21M)
+            };
+
+            return currencyList;
+        }
     }
 }

@@ -18,9 +18,7 @@ namespace CurrencyService
 
         public List<CurrencyDTO> GetCurrencies()
         {
-            List<CurrencyDTO> currencyList = new List<CurrencyDTO>();
-
-            return currencyList;
+            return CurrencyDTO.GetCurrencies();
         }
 
         public decimal GetExchangeRate(string iso)
