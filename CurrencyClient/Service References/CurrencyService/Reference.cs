@@ -23,13 +23,13 @@ namespace CurrencyClient.CurrencyService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal ExchangeRateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ISOField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
+        private decimal exchangeRateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -38,19 +38,6 @@ namespace CurrencyClient.CurrencyService {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal ExchangeRate {
-            get {
-                return this.ExchangeRateField;
-            }
-            set {
-                if ((this.ExchangeRateField.Equals(value) != true)) {
-                    this.ExchangeRateField = value;
-                    this.RaisePropertyChanged("ExchangeRate");
-                }
             }
         }
         
@@ -68,14 +55,27 @@ namespace CurrencyClient.CurrencyService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
+        public decimal exchangeRate {
             get {
-                return this.NameField;
+                return this.exchangeRateField;
             }
             set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
+                if ((this.exchangeRateField.Equals(value) != true)) {
+                    this.exchangeRateField = value;
+                    this.RaisePropertyChanged("exchangeRate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nameField, value) != true)) {
+                    this.nameField = value;
+                    this.RaisePropertyChanged("name");
                 }
             }
         }

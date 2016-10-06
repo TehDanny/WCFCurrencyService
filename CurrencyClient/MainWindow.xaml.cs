@@ -39,7 +39,8 @@ namespace CurrencyClient
 
         private void GetCurrenciesBtn_Click(object sender, RoutedEventArgs e)
         {
-            ResultLbl.Content = "Result: " + controller.GetCurrencies();
+            dataGrid.AutoGenerateColumns = true;
+            dataGrid.ItemsSource = controller.GetCurrencies();
         }
     }
 }

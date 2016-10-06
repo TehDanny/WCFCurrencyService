@@ -29,11 +29,11 @@ namespace CurrencyClient
             return exchangeRate;
         }
 
-        internal string GetCurrencies()
+        internal CurrencyDTO[] GetCurrencies()
         {
-            client.GetCurrencies();
+            //CurrencyDTO[] currencyArray = client.GetCurrencies();
 
-            return "";
+            return client.GetCurrencies();
         }
     }
 }

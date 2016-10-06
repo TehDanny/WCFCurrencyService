@@ -6,6 +6,7 @@ using System.Web;
 
 namespace CurrencyService
 {
+    [DataContract]
     public class CurrencyDTO
     {
         [DataMember]

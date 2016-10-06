@@ -8,9 +8,9 @@
   <xs:element name="ArrayOfCurrencyDTO" nillable="true" type="tns:ArrayOfCurrencyDTO" />
   <xs:complexType name="CurrencyDTO">
     <xs:sequence>
-      <xs:element minOccurs="0" name="ExchangeRate" type="xs:decimal" />
       <xs:element minOccurs="0" name="ISO" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="exchangeRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CurrencyDTO" nillable="true" type="tns:CurrencyDTO" />
